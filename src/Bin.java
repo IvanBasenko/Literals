@@ -21,5 +21,23 @@ public class Bin {
                 System.out.println(a + b + c);
             }
         }
+        for (int i = 0; i <= 40; i++) {
+            if (i % 2 == 0) {
+                System.out.println("Четное: " + i);
+            } else
+                System.out.println("Не четное: " + i);
+        }
+
+        int i, b;
+        for (i = 1; i <= 40; i++) {
+            b = 0;
+            for (int j = 1; j <= i; j++) {
+                if (i % j == 0) b++;
+            }
+            if (b <= 2)
+                System.out.println(i);
+        }
     }
 }
+
+
